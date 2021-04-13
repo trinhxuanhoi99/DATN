@@ -1,3 +1,169 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AssignmentTikiDeal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- top promo -->
+        <div class="top-promo">
+           
+        </div>
+        <!-- end top promo -->
+
+        <!-- header-form -->
+        <div class="header-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="https://tiki.vn/?src=header_tiki" class="logo">
+                            <img class="logo-vtcA" src="image/icon-header/VTCA_White_Logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-2 toggle">
+                        <a href="javascript:" class="main-nav-toggle">
+                            <img src="image/icon-header/danhMucSanPham-icon.png" alt="">
+                            <span class="long">DANH MỤC SẢN PHẨM</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 search">
+                        <div class="form-search">
+                            <form id="search_form" action="https://tiki.vn/search" method="get">
+                                <div class="search-wrap">
+                                    <div class="input">
+                                        <div class="flex">
+                                            <input type="text" name="q" autocomplete="off" value=""
+                                                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
+                                        </div>
+                                    </div>
+                                    <button type="submit">
+                                        <i class="tikicon icon-search"></i>
+                                        <span>Tìm kiếm</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="search-seller">
+                                <div data-reactroot="" class="seller-search hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="header-link">
+                            <div class="user-profile item" id="header-user">
+                                <div data-reactroot="">
+                                    <div>
+                                       <a href="Login.html"><img class="icon-style-1 icon-user" src="image/icon-header/dangNhapTaiKhoan-icon.png"
+                                            alt="">
+                                        <b style="color: aliceblue;">Đăng nhập</b><br>
+                                        <small style="color: aliceblue;">Tài khoản</small></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="header-link">
+                            <div class="user-profile item" id="header-user">
+                                <div data-reactroot="">
+                                    <div>
+                                        <img class="icon-style-1 icon-user" src="image/icon-header/dangNhapTaiKhoan-icon.png"
+                                            alt="">
+                                        <b>Đăng kí</b><br>
+                                        <small>Tài khoản</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+        <!-- end header-form -->
+
+        <!-- main-nav -->
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="main-nav-wrap">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main-nav -->
+    </div>
+    <!-- end head-->
+<div class="container login">
+    <form>
+    <div class="form-group">
+      <label for="InputName">Họ và tên</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Họ và tên">
+    </div>
+    <div class="form-group">
+        <label for="Inputtelephone">Số Điện thoại</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Số điện thoại">
+      </div>
+    <div class="form-group">
+        <label for="InputEmail">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+      </div>
+
+    <div class="form-group">
+      <label for="InputPassword">Mật khẩu</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng kí</button>
+  </form> 
+</div>
+  
+
+<footer class="footer">
+    <!-- Begin MailChimp Signup Form -->
+    <div class="tiki-newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 clearfix">
+                    <div class="tiki-newsletter-title clearfix">
+                        <img class="icon-newsletter" src="image/icon-footer/sprite2.png" alt="">
+                        <h3>Đăng ký nhận bản tin</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="mc-field-group">
+                        <input type="email" placeholder="Địa chỉ email của bạn" class="tiki-home-email form-control"
+                            id="mce-EMAIL">
+                        <span class="tiki-newsletter-helper"></span>
+                    </div>
+                    <button class="button btn btn-home-newsletter" data-index="0">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End mc_embed_signup-->
+    <hr class="line-bg-body">
+   
+</footer>
+<!-- end footer -->
+
+</body>
+
 </html>
